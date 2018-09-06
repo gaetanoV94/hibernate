@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2-set-2018 10.20.40 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="exprivia.Dlfileentry" table="dlfileentry" catalog="lportal">
+        <id name="fileEntryId" type="long">
+            <column name="fileEntryId" />
+            <generator class="assigned" />
+        </id>
+        <property name="version" type="string">
+            <column name="version" length="75" />
+        </property>
+        <property name="uuid" type="string">
+            <column name="uuid_" length="75" />
+        </property>
+        <property name="groupId" type="java.lang.Long">
+            <column name="groupId" />
+        </property>
+        <property name="companyId" type="java.lang.Long">
+            <column name="companyId" />
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="userId" />
+        </property>
+        <property name="userName" type="string">
+            <column name="userName" length="75" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="createDate" length="19" />
+        </property>
+        <property name="modifiedDate" type="timestamp">
+            <column name="modifiedDate" length="19" />
+        </property>
+        <property name="classNameId" type="java.lang.Long">
+            <column name="classNameId" />
+        </property>
+        <property name="classPk" type="java.lang.Long">
+            <column name="classPK" />
+        </property>
+        <property name="repositoryId" type="java.lang.Long">
+            <column name="repositoryId" />
+        </property>
+        <property name="folderId" type="java.lang.Long">
+            <column name="folderId" />
+        </property>
+        <property name="treePath" type="string">
+            <column name="treePath" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="extension" type="string">
+            <column name="extension" length="75" />
+        </property>
+        <property name="mimeType" type="string">
+            <column name="mimeType" length="75" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="extraSettings" type="string">
+            <column name="extraSettings" />
+        </property>
+        <property name="fileEntryTypeId" type="java.lang.Long">
+            <column name="fileEntryTypeId" />
+        </property>
+        <property name="size" type="java.lang.Long">
+            <column name="size_" />
+        </property>
+        <property name="readCount" type="java.lang.Integer">
+            <column name="readCount" />
+        </property>
+        <property name="smallImageId" type="java.lang.Long">
+            <column name="smallImageId" />
+        </property>
+        <property name="largeImageId" type="java.lang.Long">
+            <column name="largeImageId" />
+        </property>
+        <property name="custom1imageId" type="java.lang.Long">
+            <column name="custom1ImageId" />
+        </property>
+        <property name="custom2imageId" type="java.lang.Long">
+            <column name="custom2ImageId" />
+        </property>
+        <property name="manualCheckInRequired" type="java.lang.Byte">
+            <column name="manualCheckInRequired" />
+        </property>
+    </class>
+</hibernate-mapping>
